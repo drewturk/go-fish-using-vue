@@ -2,6 +2,7 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
+      <router-link to="/region/:name">Region</router-link> |
       <router-link to="/about">About</router-link>
     </nav>
     <router-view />
@@ -18,7 +19,7 @@
 }
 
 nav {
-  padding: 30px;
+  padding-bottom: 30px;
 
   a {
     font-weight: bold;
@@ -28,5 +29,11 @@ nav {
       color: #42b983;
     }
   }
+}
+
+.container {
+  padding: 5px 15px;
+  display: flex;
+  flex-flow: wrap;
 }
 </style>
